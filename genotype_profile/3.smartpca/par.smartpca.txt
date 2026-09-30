@@ -1,0 +1,9 @@
+genotypename:   merged.pruned.geno
+snpname:        merged.pruned.snp
+indivname:      merged.pruned.updated.ind
+evecoutname:    merged.pruned.pca.evec
+evaloutname:    merged.pruned.pca.eval
+poplistname:    poplist.txt
+lsqproject:     YES
+numoutevec:     30
+numoutlieriter: 0

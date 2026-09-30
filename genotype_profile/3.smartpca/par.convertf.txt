@@ -1,0 +1,7 @@
+genotypename:    merged.pruned.bed
+snpname:         merged.pruned.bim
+indivname:       merged.pruned.fam
+outputformat:    EIGENSTRAT
+genotypeoutname: merged.pruned.geno
+snpoutname:      merged.pruned.snp
+indivoutname:    merged.pruned.ind

@@ -6,7 +6,7 @@
 
 - `QC`: notebook for initial sciMET QC
 - `analysis`: code for sciMET data preprocessing
-- `clustering`: notebook for MethSCAn downstream clustering analysis on VMR matrix before variant masking
+- `matrix_clustering`: notebook for MethSCAn matrix computation, downstream dimensionality reduction and clustering analysis on VMR matrix
 - `genotype_profile`: genetic variant calling, processing and dimensionality reduction
 - `differential_methylation`: scripts for MethSCAn DMR identification and processing
 - `methylvi_integration`: scripts for running MethylVI data integration with public dataset
