@@ -9,7 +9,7 @@ import anndata as ad
 
 def main():
     parser = argparse.ArgumentParser(description='Run METHYLVI analysis on mudata object')
-    parser.add_argument('--input', required=True, help='Input mudata file (.h5mu)')
+    parser.add_argument('--input', required=True, help='Input mudata file (.h5mu). This should be a mudata object with 'mCG' slot (AnnData object similar to that of scRNA-seq) that contains 'mc' and 'cov' layers (instead of 'counts').')
     parser.add_argument('--output', required=True, help='Output mudata file (.h5mu)')
     parser.add_argument('--n_latent', type=int, default=20, help='Number of latent dimensions')
     parser.add_argument('--max_epochs', type=int, default=500, help='Maximum number of training epochs')
@@ -35,11 +35,8 @@ def main():
     )
     
     model.train(max_epochs=args.max_epochs, early_stopping=args.early_stopping)
-    
     mdata.obsm["methylVI"] = model.get_latent_representation()
-    
     sc.pp.neighbors(mdata, use_rep="methylVI")
-    
     ad.settings.allow_write_nullable_strings = True
     mdata.write(args.output)
 

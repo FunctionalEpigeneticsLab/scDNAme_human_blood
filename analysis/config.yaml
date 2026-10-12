@@ -1,0 +1,28 @@
+# Configuration for methylation pipeline
+
+# Regions to analyze
+regions:
+  tss_up15kb:
+    name: "TSS upstream 15kb"
+    n_bins: 15
+    bed_file: "T2T.TSS_up15kb_filtered.autosomes.0-based.annotated.15bins.bed"
+    strand_column: 5
+
+  gene_body:
+    name: "Gene body"
+    n_bins: 50
+    bed_file: "T2T.gene_body_filtered.autosomes.0-based.annotated.50bins.bed"
+    strand_column: 5
+  
+  tes_down15kb:
+    name: "TES downstream 15kb"
+    n_bins: 15
+    bed_file: "T2T.TES_down15kb_filtered.autosomes.0-based.annotated.15bins.bed"
+    strand_column: 5
+
+# Contexts to analyze
+contexts:
+  - NCGN-Both
+
+# Output settings
+min_coverage: 5 
