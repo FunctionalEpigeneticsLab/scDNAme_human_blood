@@ -1,5 +1,7 @@
 # Analysis scripts for human blood sciMET data
 
+[![DOI](https://zenodo.org/badge/1393414675.svg)](https://doi.org/10.5281/zenodo.23337538)
+
 > **Disclaimer:** These scripts were written for manuscript-specific analyses and are provided for transparency and reproducibility. They are not intended to function as a standalone or production-ready software package.
 
 ## Contents
